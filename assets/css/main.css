@@ -20,6 +20,7 @@
 
    .jumbotron {
     background-color: #0E1643;
+    padding-top: 0;
    }
 
    @media only screen and (max-device-width: 1500px) {
@@ -37,4 +38,8 @@
    textarea#comment.form-control {
     background-color: #242943;
     color: #ffffff;
+   }
+   
+   #bigboy {
+     padding-bottom: .5em;
    }
