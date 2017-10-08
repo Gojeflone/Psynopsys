@@ -5,7 +5,9 @@ This system aims to accurately detect signs of depression in people through thei
 ## Built Using
 
 *[IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/) - The Cloud Platform Used
+
 *[Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/) - Tone Analyzer
+
 *[Heroku](https://dashboard.heroku.com/apps) - Heroku
 
 
