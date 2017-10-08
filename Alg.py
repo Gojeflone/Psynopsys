@@ -43,31 +43,34 @@ import string
 #     }
 # )
 
-tone_analyzer = ToneAnalyzerV3(
-version='2016-05-19',
-username='03b0c6d9-036e-426c-a631-1a1487b760df',
-password='ljbXEZzJHdnX'
-)
+def runThingy():
+    tone_analyzer = ToneAnalyzerV3(
+    version='2016-05-19',
+    username='03b0c6d9-036e-426c-a631-1a1487b760df',
+    password='ljbXEZzJHdnX'
+    )
 
-#tone = tone_analyzer.tone(json.load(testInput('document_tone')['text'], tones ='emotion'),
-#content_type ='application/json')
+    #tone = tone_analyzer.tone(json.load(testInput('document_tone')['text'], tones ='emotion'),
+    #content_type ='application/json')
 
-#with open(os.path.dirname(__file__) + 'tone.json') as tone_json:
-#  tone = tone_analyzer.tone(json.load(tone_json)['text'], tones='emotion',
-#    content_type='application/json')
+    #with open(os.path.dirname(__file__) + 'tone.json') as tone_json:
+    #  tone = tone_analyzer.tone(json.load(tone_json)['text'], tones='emotion',
+    #    content_type='application/json')
 
-with open(str.join(os.path.dirname(__file__), 'tone.json')) as tone_json:
-  tone = tone_analyzer.tone(json.load(tone_json)['text'], tones='emotion',
-    content_type='application/json')
+    print("Making JSON")
+    with open(str.join(os.path.dirname(__file__), 'tone.json')) as tone_json:
+        tone = tone_analyzer.tone(json.load(tone_json)['text'], tones='emotion',
+            content_type='application/json')
 
-#tone(text, tones=None, sentences=None, content_type='text/plain')
+    #tone(text, tones=None, sentences=None, content_type='text/plain')
 
 
 def sadFreqAnalyzer(jsonOutput) :
+    print("Running FreqAnalyzer")
     #Variable Initialization
     numTones = 0
     totalSad = 0
-    avgSad = 0
+    avgSad = 1
     totalFear = 0
     avgFear= 0
     totalAnger = 0
@@ -113,4 +116,6 @@ def sadFreqAnalyzer(jsonOutput) :
         return json.dumps(retJson)
 
 
-sadFreqAnalyzer(tone.json)
+
+var jsonFile = runThingy()
+sadFreqAnalyzer(jsonFile)
