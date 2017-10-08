@@ -1,4 +1,15 @@
-# node-js-getting-started
+# Pysnopsys: Psychogical Synopsis System
+
+This system aims to accurately detect signs of depression in people through their social media posting, as well as user input in the form of a text box. Psynopsys uses a machine learning API called "Tone Analyzer" from IBM's Bluemix platform to detect emotions in text, and we expand on those results by putting them together to match signs of depression, and risk of suicide into an accessible way for everyone to use.
+
+## Built Using
+
+*[IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/) - The Cloud Platform Used
+*[Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/) - Tone Analyzer
+*[Heroku](https://dashboard.heroku.com/apps) - Heroku
+
+
+## node-js-getting-started
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
 
