@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Get the ID of the result element
     var results = document.getElementById("result");
     // Make an empty array for the entries
-    var entriesArray = [];
+    var entriesJSON = [];
     // When the analyze button is clicked...
     document.getElementById("le button").addEventListener("click", function() {
         // Split the entries newlines and assign them to entriesArray
-        entriesArray = document.getElementById("comment").value.split(/\n/);
+        entriesJSON = document.getElementById("comment").value.split(/\n/);
         // Log the array in the console so I can see it
         console.log(entriesArray);
         // Put the results in the HTML
