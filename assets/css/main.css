@@ -1,0 +1,40 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   body {
+    background-color: #242943;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+
+   }
+
+   #cool-line {
+    border-bottom: 1px solid #ffffff;
+    padding-top: 1em;
+}
+
+
+
+   .jumbotron {
+    background-color: #0E1643;
+   }
+
+   @media only screen and (max-device-width: 1500px) {
+       #inputbox {
+        width: 100%;
+       }
+   }
+
+   #inputbox {
+       width: 65%;
+       padding-bottom: 1em;
+       padding-top: 1em;
+   }
+
+   textarea#comment.form-control {
+    background-color: #242943;
+    color: #ffffff;
+   }
