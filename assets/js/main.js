@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Put the results in the HTML
         results.innerHTML = `
         <h2 style="font-size: 3em; padding-top: .5em" class="text-center"><strong>Result:</strong></h2>
-        <h2 style="text-decoration: underline; font-size: 2.5em; padding-top: .5em" class="text-center">You\'re fuckin\' gay</h2>
+        <h2 style="text-decoration: underline; font-size: 2.5em; padding-top: .5em" class="text-center">Enter Results</h2>
         `
         // Scroll to the bottom of the page to see the results
         window.scrollTo(0,document.body.scrollHeight);
