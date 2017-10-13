@@ -40,5 +40,12 @@ document.addEventListener("DOMContentLoaded", function() {
         window.scrollTo(0,document.body.scrollHeight);
     
     });
-    //jQuery.get();
+    document.getElementById("termslink").addEventListener("click", function() {
+      if (document.getElementById("terms").style.visibility == "hidden") {
+      document.getElementById("terms").style.visibility = "visible";
+      }
+      else {
+        document.getElementById("terms").style.visibility = "hidden";
+      }
+    })
 });
